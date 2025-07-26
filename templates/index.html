@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Anonymization Tool</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Data Anonymization Tool</h1>
+        <p class="lead">Upload your CSV file, and we will anonymize sensitive data.</p>
+        
+        <form action="/upload" method="post" enctype="multipart/form-data" class="mt-4">
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" name="file" required>
+                <button type="submit" class="btn btn-primary">Upload & Anonymize</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
